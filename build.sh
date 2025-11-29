@@ -6,5 +6,7 @@ else
     VERBOSE="-v0"
 fi
 
+cabal test
+cabal build
 mkdir -p build
-ghc app.hs $VERBOSE -outputdir build -o build/app
+cp $(cabal list-bin exe:app) build/app
