@@ -8,4 +8,3 @@ fi
 
 mkdir -p build
 ghc app.hs $VERBOSE -outputdir build -o build/app
-./build/app
